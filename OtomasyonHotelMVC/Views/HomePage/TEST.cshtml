@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+
+    <html>
+    <head>
+        @*<script type="text/javascript" src="js/jquery.js"></script>*@
+        <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+        <script src="~/Scripts/jquery.validate.js"></script>
+        <script src="~/Scripts/MyScripts.js"></script>
+
+        @*<script type="text/javascript">
+            $("document").ready(function () {
+                //$(function () {
+                //    $("form[name='registration']").validate({
+                //        rules: {
+                //            firstname: "required",
+                //            lastname: "required",
+                //            email: {
+                //                required: true,
+                //                email: true
+                //            },
+
+
+                //        },
+                //        messages: {
+                //            firstname: "Adı Boş bırakma",
+                //            lastname: "Soyadı Boş bırakma",
+
+                //            email: "Lütfen Email adresini ",
+
+                //        },
+                //        submitHander: function (form) {
+                //            form.submit();
+                //        }
+                //    });
+                //});
+            });
+        </script>*@
+
+    </head>
+    <body>
+        <h1>Jquery Validation Engine Eklentisi ile Form doğrulamak</h1>
+        <form id="form" method="post" action="/" name="registration">
+            <label for="firstname">Ad:</label><br />       
+            <input name="firstname" id="firstname"><br />
+            <label for="lastname">Soyad:</label><br />  
+            <input name="lastname" id="lastname"><br />
+            <label for="password">Şifre:</label><br /> 
+            <input type="password" name="password" id="password"><br />
+            <label for="email">eposta:</label><br />
+            <input name="email" id="email"><br />
+            <button type="submit">Gönder</button>
+        </form>
+    </body>
+    </html>

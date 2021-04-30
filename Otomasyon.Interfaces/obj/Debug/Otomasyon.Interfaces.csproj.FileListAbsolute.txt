@@ -1,0 +1,10 @@
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\bin\Debug\Otomasyon.Interfaces.dll
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\bin\Debug\Otomasyon.Interfaces.pdb
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\bin\Debug\Entity.dll
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\bin\Debug\Entity.pdb
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\bin\Debug\Entity.dll.config
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\obj\Debug\Otomasyon.Interfaces.csprojAssemblyReference.cache
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\obj\Debug\Otomasyon.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\obj\Debug\Otomasyon.Interfaces.csproj.CopyComplete
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\obj\Debug\Otomasyon.Interfaces.dll
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Otomasyon.Interfaces\obj\Debug\Otomasyon.Interfaces.pdb

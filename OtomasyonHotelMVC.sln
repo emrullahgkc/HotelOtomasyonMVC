@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtomasyonHotelMVC", "OtomasyonHotelMVC\OtomasyonHotelMVC.csproj", "{280B1319-630F-4870-90C9-395635022281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{C7050160-806C-493B-8219-BECE671BDAFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{39E5110B-5A27-4764-B4F2-3AC56AADA8F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D54DECE2-D518-4659-9C22-EFC3610CA8C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{5D1B27DD-456F-47CA-9464-DE290B79C988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otomasyon.Interfaces", "Otomasyon.Interfaces\Otomasyon.Interfaces.csproj", "{74D81C43-D31E-4338-B515-39F4327774E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{280B1319-630F-4870-90C9-395635022281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280B1319-630F-4870-90C9-395635022281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280B1319-630F-4870-90C9-395635022281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280B1319-630F-4870-90C9-395635022281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7050160-806C-493B-8219-BECE671BDAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7050160-806C-493B-8219-BECE671BDAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7050160-806C-493B-8219-BECE671BDAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7050160-806C-493B-8219-BECE671BDAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E5110B-5A27-4764-B4F2-3AC56AADA8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E5110B-5A27-4764-B4F2-3AC56AADA8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E5110B-5A27-4764-B4F2-3AC56AADA8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E5110B-5A27-4764-B4F2-3AC56AADA8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54DECE2-D518-4659-9C22-EFC3610CA8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54DECE2-D518-4659-9C22-EFC3610CA8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54DECE2-D518-4659-9C22-EFC3610CA8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54DECE2-D518-4659-9C22-EFC3610CA8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1B27DD-456F-47CA-9464-DE290B79C988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1B27DD-456F-47CA-9464-DE290B79C988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1B27DD-456F-47CA-9464-DE290B79C988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1B27DD-456F-47CA-9464-DE290B79C988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D81C43-D31E-4338-B515-39F4327774E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D81C43-D31E-4338-B515-39F4327774E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D81C43-D31E-4338-B515-39F4327774E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D81C43-D31E-4338-B515-39F4327774E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65CA6EF7-C533-45CF-99B8-F61A52CD4729}
+	EndGlobalSection
+EndGlobal

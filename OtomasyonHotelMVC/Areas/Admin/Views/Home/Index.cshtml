@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewBag.Title = "EG Hotels Admin - Dashboard";
+}
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/MyScripts.js"></script>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap.min.js"></script>
+<div class=" row">
+    <!-- Icon Cards-->
+    @BootsrapHelper.card("#", "fa fa-fw fa-heart", "Müşteri Listele", "background-color:#54a0ff")
+    @BootsrapHelper.ButtonCard("FormGoster('../Location/RegionJson', 'RegionModal')", "fa fa-fw fa-heart", "Müşteri ListeleTEST", "background-color:#54a0ff")
+
+
+
+    @BootsrapHelper.card("#", "fa fa-fw fa-heart", "Yeni Müşteri", "background-color:#2e86de")
+    @BootsrapHelper.card("#", "fa fa-fw fa-heart", "Personelleri Listele", "background-color:#00d2d3")
+    @BootsrapHelper.card("#", "fa fa-fw fa-heart", "Yeni Personel", "background-color:#01a3a4")
+    @BootsrapHelper.card("/Admin/Location/testmodal/", "fa fa-fw fa-heart", "TEST POPUP", "background-color:#01a3a4")
+
+
+    <!-- /cards -->
+
+</div>
+
+
+
+
+<div class=" row">
+    @BootsrapHelper.card("/Admin/Hotels/Index/", "fa fa-fw fa-heart", "Hotel Listesi", "background-color:#5f27cd")
+    @BootsrapHelper.card("/Admin/Hotels/RegisterHotel/", "fa fa-fw fa-heart", "Hotel Ekle", "background-color:#5f27cd")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Oda Listesi", "background-color:#341f97")
+    @BootsrapHelper.card("/Admin/Product/ProductRegister/", "fa fa-fw fa-heart", "Ürün Ekle", "background-color:#ff9f43")
+    @BootsrapHelper.card("/Admin/Product/Index/", "fa fa-fw fa-heart", "Ürünleri Listele", "background-color:#ee5253")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Siparişler", "background-color:#10ac84")
+    <!-- Icon Cards-->
+    <!-- /cards -->
+    <!-- Icon Cards-->
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Tedarikçiler", "background-color:#576574")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Kampanyalar", "background-color:#1dd1a1")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Kampanya Kullananlar", "background-color:#222f3e")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Servisler", "background-color:#EAB543")
+
+
+
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Yemek Listele", "background-color:#5f27cd")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Yeni Yemek", "background-color:#B33771")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Haftalık Menü", "background-color:#3B3B98")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Odalar", "background-color:#6D214F")
+
+
+
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Hareket Geçmişleri", "background-color:#FD7272")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Aktif Etkinlikler", "background-color:black")
+    @BootsrapHelper.card("#", "fa fa-fw fa-envelope-open", "Gelecek Etkinlikler", "background-color:#2C3A47")
+
+    <!-- Eklenenler-->
+    @BootsrapHelper.card("/Admin/Location/CountryList/", "fa fa-fw fa-envelope-open", "Ülkeleri Göster", "background-color:#2C3A47")
+    @BootsrapHelper.card("/Admin/Location/CountryRegister/", "fa fa-fw fa-envelope-open", "Ülke Ekle", "background-color:#2C3A47")
+
+    @BootsrapHelper.card("/Admin/Location/Index/", "fa fa-fw fa-envelope-open", "Bölge Listesi", "background-color:#2C3A47")
+    @BootsrapHelper.card("/Admin/Location/RegionRegister/", "fa fa-fw fa-envelope-open", "Bölge Ekle", "background-color:#2C3A47")
+    @BootsrapHelper.card("/Admin/Location/CityList/", "fa fa-fw fa-envelope-open", "Şehir Listesi", "background-color:#2C3A47")
+    @BootsrapHelper.card("/Admin/Location/CityRegister/", "fa fa-fw fa-envelope-open", "Şehir Ekle", "background-color:#2C3A47")
+    @BootsrapHelper.card("/Admin/Location/DistrictList/", "fa fa-fw fa-envelope-open", "İlçe Listesi", "background-color:#2C3A47")
+    @BootsrapHelper.card("/Admin/Location/DistrictRegister/", "fa fa-fw fa-envelope-open", "İlçe Ekle", "background-color:#2C3A47")
+
+
+
+
+    <!-- /cards -->
+</div>
+
+<br />
+<hr />
+<div class="row">
+    <div class="col-xl-3 col-sm-6 mb-3 ">
+
+        <button class="btn-primary form-control card-body h-100 " style="font-size:large;"><h5 style="color:wheat" class=" float-left">Home</h5> <span class="fa fa-envelope-open float-right" style="margin-top:5px"></span>  </button>
+    </div>
+</div>
+
+<br />
+
+<div class=" box box-default">
+    <div class="box-header with-border">
+        <button type="button" onclick="FormGoster('../Location/RegionJson', 'RegionModal')" class="btn btn-success">Yeni Ekle</button>
+    </div>
+    <div class="box-body">
+        <div class="col-xs-12">
+            <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                <div class="row"><div class="col-sm-6"></div><div class="col-sm-6"></div></div><div class="row">
+                    <div id="PanelStokListe" class="col-sm-12">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5"><div class="dataTables_info" id="example2_info" role="status" aria-live="polite"></div></div><div class="col-sm-7">
+
+                        <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                            <ul class="pagination"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- MODAL-->
+
+<div id="RegionModal" class="modal" name="RegionModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header ">
+
+                <h4 class="col-11 modal-title text-center" style="text-align:center">Bölge Bilgileri</h4>
+                <button type="button" class="close" data-dismiss="modal" onclick="FormKapat('RegionModal')" aria-label="Close">
+                    <span aria-hidden="true" style="color:red; font-size:27px;">&times;</span>
+                </button>
+
+
+
+
+            </div>
+            <div id="RegionModalBody" class="modal-body">
+
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>

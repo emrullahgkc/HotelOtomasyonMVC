@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74D81C43-D31E-4338-B515-39F4327774E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Otomasyon.Interfaces</RootNamespace>
+    <AssemblyName>Otomasyon.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\IActivityService.cs" />
+    <Compile Include="Services\ICampaignCategoryService.cs" />
+    <Compile Include="Services\ICampaignCodeService.cs" />
+    <Compile Include="Services\ICampaignCodeStatusService.cs" />
+    <Compile Include="Services\ICampaignPeriodTimeService.cs" />
+    <Compile Include="Services\ICampaignQuantityService.cs" />
+    <Compile Include="Services\ICampaignQuantityTypeService.cs" />
+    <Compile Include="Services\ICampaignService.cs" />
+    <Compile Include="Services\ICampaignStatusService.cs" />
+    <Compile Include="Services\ICampaignTypeService.cs" />
+    <Compile Include="Services\ICampaignUsingService.cs" />
+    <Compile Include="Services\ICityService.cs" />
+    <Compile Include="Services\ICountryService.cs" />
+    <Compile Include="Services\ICustomerService.cs" />
+    <Compile Include="Services\IComplaintService.cs" />
+    <Compile Include="Services\IComplaintTypeService.cs" />
+    <Compile Include="Services\IDayService.cs" />
+    <Compile Include="Services\IDistrictService.cs" />
+    <Compile Include="Services\IFloorsService.cs" />
+    <Compile Include="Services\IFoodCategoryService.cs" />
+    <Compile Include="Services\IFoodService.cs" />
+    <Compile Include="Services\IFoodTimeService.cs" />
+    <Compile Include="Services\IGenericServiceIF.cs" />
+    <Compile Include="Services\IHotelGalleryService.cs" />
+    <Compile Include="Services\IHotelsService.cs" />
+    <Compile Include="Services\IHotelsVizyonMisyonService.cs" />
+    <Compile Include="Services\IPersonelService.cs" />
+    <Compile Include="Services\IProductCategoryService.cs" />
+    <Compile Include="Services\IProductService.cs" />
+    <Compile Include="Services\IRegionService.cs" />
+    <Compile Include="Services\IUsersRolService.cs" />
+    <Compile Include="Services\IUsersService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{C7050160-806C-493B-8219-BECE671BDAFE}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

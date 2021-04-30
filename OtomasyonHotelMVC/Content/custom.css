@@ -1,0 +1,39 @@
+/* YOUR CUSTOM CSS */
+.form-control {
+    font-style: italic;
+text-align:center;
+}
+.test {
+    color: #3A3A3A;
+    font-style: italic;
+}
+.text-area {
+    width: 100%;
+    height: 100px;
+    max-height:100px;
+    min-height: 100px;
+    color: #3A3A3A;
+    text-align: center;
+    font-style: italic;
+    border: 1px solid #d1d3e2;
+    border-radius: 0.35rem;
+}
+    .text-area:focus {
+        color: #6e707e;
+        background-color: #fff;
+        border-color: #bac8f3;
+        outline: 0;
+        box-shadow: 0 0 0 .2rem rgba(78,115,223,.25)
+    }
+.imghotel {
+    background-color:red;
+    border-radius: 8px;
+    border-color:aqua;
+    border:double;
+}
+    .imghotel[src=""] {
+        display: none;
+    }
+    .imghotel:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }

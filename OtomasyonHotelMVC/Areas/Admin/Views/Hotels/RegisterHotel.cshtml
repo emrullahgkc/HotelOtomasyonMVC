@@ -1,0 +1,128 @@
+﻿@model Entity.ViewModels.HotelsViewModel
+<div>
+    @Html.ActionLink("Geri Dön", "Index")
+</div>
+
+@using (Html.BeginForm("RegisterHotel", "Hotels", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal" style="text-align:center">
+    <h4 class=" card-footer">    <b>Hotel Bilgileri</b></h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class=" row">
+        <div class="col-md-6 col-lg-3 col-sm-12">
+            <div class="form-group card-body">
+                @if (Model.hotelPhoto == null || Model.hotelPhoto == "")
+                {
+                    <img src="~/img/Hotels/HotelNull.png" width="200" height="200" class="card card-body imghotel">
+
+                }
+                else if (Model.hotelPhoto != null || Model.hotelPhoto != null)
+                {
+                    <img src="~/img/Hotels/@Html.DisplayFor(x => x.hotelPhoto)" width="200" height="200" class="card card-body imghotel">
+
+                }
+
+            </div>
+            <div class="form-group" style="margin-top:1%">
+                <br />    @*Photo Başlama*@
+                <div id="fotoekle" class="col-md-3 test">
+
+                    <input type="file" name="hotelPhoto" />
+                    <br />
+                </div>
+                @*photo bitme*@
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.hotelName, htmlAttributes: new { @class = "control-label  col-md-12" })
+                <div class="col-md-12 col-sm-12 col-lg-12">
+                    @Html.EditorFor(model => model.hotelName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.hotelName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.hotelAddress, htmlAttributes: new { @class = "control-label col-md-12" })
+                <div class="col-md-12 col-sm-12 col-lg-12">
+                    @Html.TextAreaFor(model => model.hotelAddress, 5, 20, new { @class = "text-area" })
+                    @Html.ValidationMessageFor(model => model.hotelAddress, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 col-sm-12">
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.regionName, htmlAttributes: new { @class = "control-label col-md-12 " })
+                <div class="col-md-12 col-sm-12 col-lg-11">
+                    @Html.DropDownListFor(m => m.regionId, (List<SelectListItem>)ViewBag.Region, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.cityName, htmlAttributes: new { @class = "control-label col-md-12" })
+                <div class="col-md-12 col-sm-12 col-lg-11">
+                    @Html.DropDownListFor(m => m.cityId, (List<SelectListItem>)ViewBag.City, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.districtName, htmlAttributes: new { @class = "control-label col-md-12" })
+                <div class="col-md-12 col-sm-12 col-lg-11">
+                    @Html.DropDownListFor(m => m.districtId, (List<SelectListItem>)ViewBag.District, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group row col-md-12 col-sm-12 col-lg-12">
+                <div class="col-md-12 col-sm-6 col-lg-6" style="float:left">
+                    Kat Sayısı
+                    @Html.TextBoxFor(m => m.districtId, new { @class = "form-control" })
+                </div>
+                <div class=" col-md-12 col-sm-6 col-lg-6 " style="float:right">
+                    Oda Sayısı
+
+                    @Html.TextBoxFor(m => m.districtId, new { @class = "form-control" })
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-12 ">
+            <div class="form-group  ">
+                Kuruluş Yılı
+                <div class="col-md-12 col-sm-12 col-lg-11 ">
+                    @Html.TextBoxFor(m => m.foundationYear, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                Faaliyet Durumu
+                <div class="col-md-12 col-sm-12 col-lg-11">
+                    @Html.CheckBoxFor(m => m.isAktive) Aktif
+                </div>
+            </div>   <div class="form-group">
+                @*BURASİ HOTEL EKLERKEN GÖZÜKMEYECEK DÜZELTİRKEN POPUP OLARAK DÜZELTME YAPACAK*@
+                <div class="col-md-12 col-sm-12 col-lg-11">
+                    <input type="button" value=" Kat Şeması Oluştur" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    @Html.HiddenFor(x => x.Id)
+    <div class="float-left">
+        * Kat Şeması oluşturmak için Önce Hotel Bilgilerini Ekleyiniz Sonra Hotels Menüsünden Hoteli Seçip Düzeltme İşlemi Yapabilirsiniz.
+    </div><br />
+    @if (ViewBag.Resul != null)
+    {
+        <div class=" alert alert-@ViewBag.Status" role="alert">@ViewBag.Result</div>
+    }
+
+    <div class="form-group " style="text-align:right">
+        <hr /><br />
+        <div class="col-md-offset-2 col-sm-offset-1 col-md-6 col-sm-12">
+            <input type="submit" value="Kaydet" class="btn btn-success" />
+            <input type="reset" value="İptal" class="btn btn-danger" />
+        </div>
+    </div>
+</div>
+}
+

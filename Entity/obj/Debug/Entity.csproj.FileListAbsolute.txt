@@ -1,0 +1,14 @@
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\bin\Debug\Entity.dll.config
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\bin\Debug\Entity.dll
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\bin\Debug\Entity.pdb
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\bin\Debug\EntityFramework.dll
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\bin\Debug\EntityFramework.xml
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\obj\Debug\Entity.csproj.CopyComplete
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\obj\Debug\Entity.dll
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\obj\Debug\Entity.pdb
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\obj\Debug\Entity.csprojAssemblyReference.cache
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\bin\Debug\Newtonsoft.Json.dll
+C:\Users\EmrullaH\source\repos\OtomasyonHotelMVC\Entity\bin\Debug\Newtonsoft.Json.xml
